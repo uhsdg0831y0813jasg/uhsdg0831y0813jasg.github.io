@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Streaming Links</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #0d0d0f;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 260px;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #fff;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+  }
+
+  .netflix {
+    background: #B20710;
+  }
+  .netflix:hover {
+    box-shadow: 0 6px 18px rgba(178, 7, 16, 0.5);
+  }
+
+  .amazon {
+    background: #FF9900;
+  }
+  .amazon:hover {
+    box-shadow: 0 6px 18px rgba(255, 153, 0, 0.5);
+  }
+
+  .hulu {
+    background: #1ce783;
+    color: #0d0d0f;
+  }
+  .hulu:hover {
+    box-shadow: 0 6px 18px rgba(28, 231, 131, 0.5);
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <a class="btn netflix" href="https://www.netflix.com/" target="_blank">Netflix</a>
+    <a class="btn amazon" href="https://www.amazon.com/gp/video/storefront"  target="_blank">Amazon Prime Video</a>
+    <a class="btn hulu" href="https://www.hulu.com/welcome" target="_blank">Hulu</a>
+  </div>
+
+</body>
+</html>
